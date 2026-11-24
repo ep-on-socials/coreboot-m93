@@ -4,6 +4,8 @@
 * `descriptor.bin` — Intel Flash Descriptor (IFD)
 * `me.bin` — Intel Management Engine firmware
 * `gbe.bin` — **Sanitized** Intel I217-LM Gigabit Ethernet NVM image (contains a placeholder MAC address for reproducible/CI builds)
+* `vbt.bin` ... The extracted Video BIOS Table (optional/unused while MAINBOARD_HAS_LIBGFXINIT is selected)
+
 
 ## Extracting Your Machine's Factory `gbe.bin`
 Before flashing a full SPI image onto physical hardware, extract your board's unique `gbe.bin` so the onboard Intel I217-LM NIC retains its factory MAC address and valid NVM checksum.

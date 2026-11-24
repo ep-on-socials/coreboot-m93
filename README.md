@@ -1,7 +1,7 @@
 # Lenovo ThinkCentre M93 SFF Coreboot Port
 
-[!WARNING]
-THIS HAS NOT YET BEEN COMPILED OR TESTED. USE AT YOUR OWN RISK.
+> [!WARNING]
+> THIS HAS NOT YET BEEN COMPILED OR TESTED. USE AT YOUR OWN RISK.
 
  
 The m93 (aka m93 sff) is smaller than the m93p which is a mini tower. It still has a PCI riser but it can only fit a small card e.g. network. There's neither space nor thermals for a dGPU as faras I know.

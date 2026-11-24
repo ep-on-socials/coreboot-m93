@@ -1,4 +1,8 @@
 # Lenovo ThinkCentre M93 SFF Coreboot Port
+
+[!WARNING]
+THIS HAS NOT YET BEEN COMPILED OR TESTED. USE AT YOUR OWN RISK.
+
  
 The m93 (aka m93 sff) is smaller than the m93p which is a mini tower. It still has a PCI riser but it can only fit a small card e.g. network. There's neither space nor thermals for a dGPU as faras I know.
 
@@ -23,3 +27,9 @@ This is a standalone mainboard overlay and extracted firmware blobs (`descriptor
    make menuconfig   # Select Mainboard -> Lenovo -> ThinkCentre M93
    make
    ```
+
+## License and Third-Party Notices
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### Third-Party Content
+This repository contains third-party code, libraries, or assets in [3rdparty](3rdparty/blobs/mainboard/lenovo/thinkcentre_m93) that may be governed by their own respective licenses. 

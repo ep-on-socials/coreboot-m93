@@ -4,7 +4,7 @@
 * `descriptor.bin` — Intel Flash Descriptor (IFD)
 * `me.bin` — Intel Management Engine firmware
 * `gbe.bin` — **Sanitized** Intel I217-LM Gigabit Ethernet NVM image (contains a placeholder MAC address for reproducible/CI builds)
-* `vbt.bin` ... The extracted Video BIOS Table (optional/unused while MAINBOARD_HAS_LIBGFXINIT is selected)
+* `vbt.bin` ... Video BIOS Table passed via ACPI OpRegion to the OS graphics driver alongside libgfxinit
 
 
 ## Extracting Your Machine's Factory `gbe.bin`

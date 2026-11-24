@@ -28,6 +28,34 @@ This is a standalone mainboard overlay and extracted firmware blobs (`descriptor
    make
    ```
 
+# Build
+
+I *think* this config yanked from m93p repo should work. Needs testing
+
+```
+CONFIG_VENDOR_LENOVO=y
+CONFIG_BOARD_LENOVO_THINKCENTRE_M93=y
+CONFIG_CBFS_SIZE=0x00680000
+CONFIG_USE_NATIVE_RAMINIT=y
+CONFIG_HAVE_IFD_BIN=y
+CONFIG_IFD_BIN_PATH="3rdparty/blobs/mainboard/lenovo/thinkcentre_m93/descriptor.bin"
+CONFIG_HAVE_ME_BIN=y
+CONFIG_ME_BIN_PATH="3rdparty/blobs/mainboard/lenovo/thinkcentre_m93/me.bin"
+CONFIG_STRIP_ME_BIN=y
+CONFIG_HAVE_GBE_BIN=y
+CONFIG_GBE_BIN_PATH="3rdparty/blobs/mainboard/lenovo/thinkcentre_m93/gbe.bin"
+CONFIG_MAINBOARD_USE_LIBGFXINIT=y
+CONFIG_GENERIC_LINEAR_FRAMEBUFFER=y
+CONFIG_INTEL_GMA_ADD_VBT=y
+CONFIG_INTEL_GMA_VBT_FILE="3rdparty/blobs/mainboard/lenovo/thinkcentre_m93/vbt.bin"
+CONFIG_DRIVERS_UART_8250IO=y
+CONFIG_CONSOLE_SERIAL=y
+CONFIG_BOOTBLOCK_CONSOLE=y
+CONFIG_POSTCAR_CONSOLE=y
+CONFIG_SQUELCH_EARLY_SMP=y
+# CONFIG_CONSOLE_SPI_FLASH is not set
+```
+
 ## License and Third-Party Notices
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 

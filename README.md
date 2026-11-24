@@ -2,7 +2,8 @@
  
 The m93 (aka m93 sff) is smaller than the m93p which is a mini tower. It still has a PCI riser but it can only fit a small card e.g. network. There's neither space nor thermals for a dGPU as faras I know.
 
-With many, many thanks to jamesy0ung/coreboot-m93p upon which this rests. Investigating the hardware I have and creating this patch was heavily LLM driven and these changes have not yet been compiled, nevermind tested.
+With many, many thanks to [jamesy0ung/coreboot-m93p](https://github.com/jamesy0ung/coreboot-m93p) and a wide variety of tools like demidecode, acpidump, flashrom, asl, superiotool, inteltool, etc upon which this rests. Investigating the hardware I have and creating this patch was heavily LLM driven and these changes have not yet been compiled, nevermind tested.
+
 
 This is a standalone mainboard overlay and extracted firmware blobs (`descriptor.bin`, `gbe.bin`, `me.bin`, `vbt.bin`) for the Lenovo ThinkCentre M93 SFF.
 

@@ -15,7 +15,7 @@ This is a standalone mainboard overlay and extracted firmware blobs (`descriptor
 
 1. Clone upstream Coreboot:
    ```sh
-   git clone https://coreboot.org
+   git clone https://github.com/coreboot/coreboot.git
    ```
 2. Apply this overlay to your Coreboot checkout:
    ```sh
